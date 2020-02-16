@@ -1,0 +1,19 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog
+    username: root
+    password: hy123456
+    driver-class-name: com.mysql.jdbc.Driver
+  # SpringMVC视图解析器配置
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.school.design.automobile_sales_mall.entity
+
