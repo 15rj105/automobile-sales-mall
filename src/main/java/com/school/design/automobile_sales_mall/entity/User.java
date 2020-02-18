@@ -1,8 +1,10 @@
 package com.school.design.automobile_sales_mall.entity;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 @Data
+@Accessors(chain = true)
 public class User {
     private Integer id;
 

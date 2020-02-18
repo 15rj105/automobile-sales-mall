@@ -4,11 +4,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>用户登录页面</title>
+    <title>登陆成功跳转</title>
 </head>
 <body >
-<h2 align="center"><font color=red>用户登录页面</font></h2>
-<form action="login.action" method="post">
+<form action="register.action" method="post">
     <table align="center" border="1">
         <tr>
             <td>用户名:</td>
@@ -19,12 +18,17 @@
             <td><input type="text" name="password"></td>
         </tr>
         <tr>
-            <td><input type="submit" value="登录" name="login"></td>
-            <td><input type="reset" value="重置" name="reset"></td>
+            <td>手机号:</td>
+            <td><input type="text" name="phone"></td>
+        </tr>
+        <tr>
+            <td>邮&nbsp;&nbsp;箱:</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="注册" name="register"></td>
         </tr>
     </table>
-    <p align="center"><a href="register.action" color=blue>注册用户</a></p>
 </form>
-
 </body>
 </html>

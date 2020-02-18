@@ -15,4 +15,9 @@ public class UserServiceImpl implements UserService {
     public User getUserByName(String userName) {
         return userMapper.getUserByName(userName);
     }
+
+    @Override
+    public Boolean addUser(User user) {
+        return userMapper.addUser(user) == 1;
+    }
 }
